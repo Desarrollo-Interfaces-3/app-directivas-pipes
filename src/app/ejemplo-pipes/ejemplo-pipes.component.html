@@ -1,1 +1,40 @@
-<p>ejemplo-pipes works!</p>
+<div class="alert alert-primary" role="alert">
+    Fecha sin formato: {{fechaActual}}
+    <hr />
+    {{fechaActual | date: 'short'}}
+    <hr />
+    {{fechaActual | date: 'long'}}
+    <hr />
+    {{fechaActual | date: 'fullDate'}}
+    <hr />
+    {{fechaActual | date: 'medium'}}
+    <hr />
+    {{fechaActual | date: 'dd/MM/yyyy'}} {{fechaActual | date: 'HH:mm:ss'}} 
+  </div>
+  <div class="alert alert-success" role="alert">
+    {{nombres | uppercase}}
+    <hr /> 
+    {{nombres | titlecase}}
+  </div>
+  
+
+  <div class="alert alert-danger" role="alert">
+    {{monto | currency: 'S/.'}}
+  </div>
+  
+
+  <div class="alert alert-warning" role="alert">
+    {{porcentaje | percent}}
+    {{porcentaje | percent: '2.1-2'}}
+  </div>
+  
+
+  <div class="alert alert-info" role="alert">
+    {{nombres | slice:0:4}}
+  </div>
+
+  <div class="alert alert-dark" role="alert">
+    {{persona | json}}
+  </div>
+  
+  

@@ -26,6 +26,10 @@ export class EjemploDirectivasComponent {
 
   verCursos():void {
     this.mostrarCursos = true
+    this.cursosLista.push({id: 1, nombre: "Desarrollo Web", precio: 1230 })
+    this.cursosLista.push({id: 2, nombre: "Desarrollo Aplicaciones móviles", precio: 4030 })
+    this.cursosLista.push({id: 3, nombre: "Base de datos 1", precio: 2330 })
+    this.cursosLista.push({id: 4, nombre: "Scrum", precio: 5230 })
   }
 
 }
